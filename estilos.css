@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    background-color: rgb(69, 18, 116);
+}
+
+h1{ font-size: 3.1em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+button:hover{
+    background-color: rgb(93, 31, 151);
+}
+
+.container{
+    max-width: 1900px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.45em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(93, 31, 151);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("media/paisaje.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#somosif .container{
+    text-align: center;
+    color:white;
+    padding: 150px 0px;
+    background-color: rgba(30, 30, 30);
+}
+
+#somosif h2{
+    color: blueviolet;
+    text-align: center center;
+}
+
+#nuestros-servicios{
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+#nuestros-servicios .container{
+    padding: 100px 0px;
+}
+
+#nuestros-servicios h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-servicios p{
+    display: none;
+}
+
+.carta{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("media/cascada.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta2{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("media/montaña.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta3{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("media/playa.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#caracteristicas .container{
+    color: white;
+    background-color: rgba(30, 30, 30);
+    padding: 50px 12px;
+    margin-top: 15px;
+}
+
+#caracteristicas li{
+    text-align: center;
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+#cumple h2{
+    text-align: center;
+    background-color: rgba(30, 30, 30);
+    color: white;
+    margin-top: 15px;
+}
+
+#cumple .container{
+    text-align: center;
+    background-color: rgba(30, 30, 30);
+    color: white;
+}
+
+#estudio h2{
+    text-align: center;
+    background-color: rgba(30, 30, 30);
+    color: white;
+    margin-top: 15px;
+}
+
+#estudio .container{
+    text-align: center;
+    background-color: rgba(30, 30, 30);
+    color: white;
+}
+
+#contacto h2{
+    text-align: center;
+    background-color: rgba(30, 30, 30);
+    color: white;
+    margin-top: 12px;
+}
+
+#contacto .container{
+    background-color: rgba(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#contacto button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(245, 245 245);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(31, 31, 31);
+}
+
+footer .container{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somosif .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #somosif .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somosif h2{
+        margin-top: 0;
+    }
+
+    #somosif .imagen{
+        background-image: url("media/cascada.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nuestros-servicios .servicios{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-servicios h3{
+        margin-top: 0;
+    }
+
+    #nuestros-servicios h2{
+        font-size: 4em;
+    }
+
+    #nuestros-servicios p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #caracteristicas li{
+        text-align: center;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #contacto h2{
+        font-size: 3.5em;
+    }
+
+    #contacto button{
+        font-size: 2em;
+    }
+
+    #contacto .container{
+        padding: 15px;
+    }
+
+    #footer .container{
+        justify-content: flex-end;
+    }
+}
